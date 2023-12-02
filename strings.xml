@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Maverick.com</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="or">OR</string>
+    <string name="continue_with_facebook">continue with Facebook</string>
+    <string name="continue_with_google">continue with Google</string>
+    <string name="do_not_have_account">Don’t have an account yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_sign_up_prompt">Don’t have an account yet?\nSign Up</string>
+    <string name="logo_description">logo of Maverick</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="ic_market">Market</string>
+    <string name="ic_analysis">Analysis</string>
+    <string name="ic_trading">Trading</string>
+    <string name="ic_portfolio">Portfolio</string>
+    <string name="ic_notify">Notify</string>
+    <string name="ic_profile">Profile</string>
+</resources>
