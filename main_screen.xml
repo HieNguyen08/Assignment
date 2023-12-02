@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_navy_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/maverick_logo"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="78dp"
+            android:contentDescription="@string/logo_description" />
+        <TextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:fontFamily="@font/inika"
+            android:textColor="@color/yellow_maverick"
+            android:textSize="24sp"
+            android:paddingStart="18dp"
+            android:paddingEnd="50dp"/>
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@color/black"
+        android:paddingStart="14dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <!-- Icon market -->
+        <ImageView
+            android:id="@+id/iconMarket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/ic_market"
+            android:src="@drawable/market" />
+        <TextView
+            android:id="@+id/textMarket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/iconMarket"
+            android:text="@string/ic_market"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <!-- Icon analysis -->
+        <ImageView
+            android:id="@+id/iconAnalysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconMarket"
+            android:layout_marginStart="40dp"
+            android:layout_alignTop="@id/iconMarket"
+            android:contentDescription="@string/ic_analysis"
+            android:src="@drawable/analysis"/>
+
+        <TextView
+            android:id="@+id/textAnalysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconMarket"
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/iconAnalysis"
+            android:text="@string/ic_analysis"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <!-- Icon trading -->
+        <ImageView
+            android:id="@+id/iconTrading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconAnalysis"
+            android:layout_marginStart="40dp"
+            android:layout_alignTop="@id/iconMarket"
+            android:contentDescription="@string/ic_trading"
+            android:src="@drawable/trading"/>
+        <TextView
+            android:id="@+id/textTrading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconAnalysis"
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/iconTrading"
+            android:text="@string/ic_trading"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <!-- Icon portfolio -->
+        <ImageView
+            android:id="@+id/iconPortfolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconTrading"
+            android:layout_marginStart="40dp"
+            android:layout_alignTop="@id/iconMarket"
+            android:contentDescription="@string/ic_portfolio"
+            android:src="@drawable/portfolio"/>
+        <TextView
+            android:id="@+id/textPortfolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconTrading"
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/iconPortfolio"
+            android:text="@string/ic_portfolio"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <!-- Icon notify -->
+        <ImageView
+            android:id="@+id/iconNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconPortfolio"
+            android:layout_marginStart="40dp"
+            android:layout_alignTop="@id/iconMarket"
+            android:contentDescription="@string/ic_notify"
+            android:src="@drawable/notify"/>
+        <TextView
+            android:id="@+id/textNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconPortfolio"
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/iconNotify"
+            android:text="@string/ic_notify"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        <!-- Icon profile -->
+        <ImageView
+            android:id="@+id/iconProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconNotify"
+            android:layout_marginStart="40dp"
+            android:layout_alignTop="@id/iconMarket"
+            android:contentDescription="@string/ic_profile"
+            android:src="@drawable/profile"/>
+        <TextView
+            android:id="@+id/textProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconNotify"
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/iconProfile"
+            android:text="@string/ic_profile"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
