@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_navy_background">#0D1321</color>
+    <color name="gray">#6C757D</color>
+    <color name="yellow_maverick">#E1AF1F</color>
+    <color name="yellow_button">#C88C16</color>
+    <color name="blue_FB">#1877F2</color>
+    <color name="blue_SignUp">#4895EF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#D00000</color>
+    <color name="green">#19AF00</color>
+</resources>
+
+
