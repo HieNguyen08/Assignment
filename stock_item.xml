@@ -1,0 +1,49 @@
+<!-- Layout cho từng item cổ phiếu trong danh sách -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/blue_navy_background"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textViewStockSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="AAPL" />
+    <TextView
+        android:id="@+id/textCompanyStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textViewStockSymbol"
+        android:text="Apple"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewStockPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewStockSymbol"
+        android:layout_marginStart="140dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="$175.46" />
+
+    <TextView
+        android:id="@+id/textViewPriceChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewStockPrice"
+        android:layout_marginStart="54dp"
+        android:layout_alignParentEnd="true"
+        android:text="-0.22%"
+        android:textColor="@color/red"
+        android:textSize="20sp"/>
+</RelativeLayout>
